@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DimoTech Links</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .profile {
+      margin-top: 30px;
+    }
+
+    .profile img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid white;
+      object-fit: cover;
+    }
+
+    .upload {
+      margin-top: 10px;
+    }
+
+    input[type="file"] {
+      color: white;
+    }
+
+    h1 {
+      margin: 10px 0 5px;
+    }
+
+    p {
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    .links {
+      margin-top: 30px;
+    }
+
+    .links a {
+      display: block;
+      background: white;
+      color: #333;
+      text-decoration: none;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .links a:hover {
+      background: #00c6ff;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 12px;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="profile">
+    <img id="profilePic" src="" alt="Profile Picture">
+    
+
+    <h1>DimoTech</h1>
+    <p>Tech | Tutorials | Tips</p>
+  </div>
+
+  <div class="links">
+    <a href="https://wa.me/2348137549346" target="_blank">💬 WhatsApp</a>
+    <a href="https://instagram.com/ELDIMO404" target="_blank">📸 Instagram</a>
+    <a href="https://facebook.com/eldimo11" target="_blank">📘 Facebook</a>
+    <a href="https://youtube.com/@ibrahim__abdullahi001?si=D1D8pdaQS5X1iepd" target="_blank">▶️ YouTube</a>
+    <a href="https://linkedin.com/in/yourprofile" target="_blank">💼 LinkedIn</a>
+    <a href="https://x.com/Ibrahim08016154" target="_blank">🐦 Twitter</a>
+  </div>
+
+  <footer>
+    © 2026 DimoTech
+  </footer>
+
+</div>
+
+<script>
+  function loadImage(event) {
+    const image = document.getElementById('profilePic');
+    image.src = URL.createObjectURL(event.target.files[0]);
+  }
+</script>
+
+</body>
+</html>
